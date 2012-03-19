@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Address Book</title>
+  <link href="/static/css/addressbook.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="/static/css/bootstrap.css" media="all" rel="stylesheet" type="text/css"/>
+  <script data-main="/static/js/" src="/static/js/ext/require.js"></script>
+</head>
+<body>
+<script>
+  require(['ext/jquery', 'ext/underscore', 'ext/backbone','template', 'addressbook'], function() {
+  $(document).ready(function() {
+    window.App = new AddressApp({ appendTo: $('body') });
+  });
+});
+</script>
+<!-- Templates -->
+
+  <script type="text/template" id="item-template">
+    <div class="address-book">
+      <div class="display">
+          <p class="help-block">Double Click Nickname to edit</p>
+          <div class="nickname"></div>
+          <div class="address"></div>
+          <span class="address-destroy"></span>
+      </div>
+      <div class="edit">
+        <input class="nickname-input" type="text" value="" />
+      </div>
+    </div>
+
+  </script>
+</body>
+</html>
