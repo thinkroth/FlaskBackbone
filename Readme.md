@@ -1,6 +1,6 @@
 # Flask/Mongodb/Backbone - Experiments with some new things
       
-  Just playing with some new frameworks.
+  Just playing with some new frameworks.  It's just for fun.
   
 
 
