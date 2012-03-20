@@ -62,7 +62,7 @@ def create_location():
     address = data['address']
 
     # Send posted address to google geocoding service
-    g = geocoders.Google('AIzaSyAy-IjYRXblGpiEA-2zlXuKOlBX_SjrShU')
+    g = geocoders.Google('api-goes-here')
     (place, (latitude, longitude)) = g.geocode(address)
 
     data['address'] = place
